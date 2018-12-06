@@ -30,6 +30,9 @@ public class ThreeBeepers extends Karel{
 		turnRight();
 		goToPutTheBeepers();
 	}
+	/*
+	 * Karel goes to pick the beepers until the wall
+	 */
 	private void goToPickTheBeepers() {
 		while(frontIsClear()) {
 			move();
@@ -38,16 +41,25 @@ public class ThreeBeepers extends Karel{
 			}
 		}
 	}
+	/*
+	 * Karel turns to the right
+	 */
 	private void turnRight() {
 		for(int i = 0; i < 3; i++) {
 			turnLeft();
 		}
 	}
+	/*
+	 * Karel turns around
+	 */
 	private void turnAround() {
 		for(int i = 0; i < 2; i++) {
 			turnLeft();
 		}
 	}
+	/*
+	 * Karel puts two beepers at the end
+	 */
 	private void goToPutTheBeepers() {
 		while(frontIsClear()) {
 			move();
