@@ -14,7 +14,7 @@ public class MeetKarel extends Karel {
         move();
         putBeeper();
         for(int i = 0; i < 2; i++){
-          move();
+            move();
         }
     }
     /*
@@ -22,7 +22,7 @@ public class MeetKarel extends Karel {
      */
     private void goPickTheBeeper(){
         while(frontIsClear()){
-          move();
+            move();
         }
         pickBeeper();
     }
@@ -33,7 +33,7 @@ public class MeetKarel extends Karel {
         turnLeft();
         move();
         for(int i = 0; i < 3; i++) {
-          turnLeft();
+        	turnLeft();
         }
     }
 }
