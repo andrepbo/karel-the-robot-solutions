@@ -19,6 +19,9 @@ public class UnitedNationsKarel extends SuperKarel{
 			findDebris();
 		}
 	}
+	/*
+	 * Karel finds the debris
+	 */
 	private void findDebris() {
 		while(frontIsClear()) {
 			move();
@@ -28,6 +31,9 @@ public class UnitedNationsKarel extends SuperKarel{
 			}
 		}
 	}
+	/*
+	 * Karel builds the house
+	 */
 	private void buildHouse() {
 		turnAround();
 		move();
@@ -46,6 +52,9 @@ public class UnitedNationsKarel extends SuperKarel{
 		}
 		turnLeft();
 	}
+	/*
+	 * Karel construct piles for the house
+	 */
 	private void constructPile() {
 		putBeeper();
 		for(int i = 0; i < 2; i++) {
