@@ -37,9 +37,15 @@ public class InnerBorderKarel extends SuperKarel {
 			}
 		}
 		pickBeeper();
+		squareCorner();
+	}
+	/*
+	 * Precondition: Karel is facing the wall
+	 */
+	private void squareCorner() {
 		turnAround();
 		move();
 		turnAround();
 		turnLeft();
-	}	
+	}
 }
